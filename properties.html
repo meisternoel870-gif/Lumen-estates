@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Properties — LUMEN Estates</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="nav container">
+
+<a href="index.html" class="brand">
+LUMEN<span>.</span>
+</a>
+
+<nav class="desktop-nav">
+
+<a href="index.html">Home</a>
+<a class="active" href="properties.html">Properties</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="nav-right">
+
+<a href="properties.html" class="saved-link">
+♡ <span id="favoriteCount">0</span>
+</a>
+
+<button class="mobile-toggle">
+<span></span>
+<span></span>
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+<div class="container">
+
+<p class="eyebrow">
+THE COLLECTION
+</p>
+
+<h1>
+Properties.
+</h1>
+
+<p>
+Explore our selection of residences, investment properties
+and exceptional homes.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="property-search-section">
+
+<div class="container">
+
+<div class="advanced-search">
+
+<div class="search-type-toggle">
+
+<button class="listing-mode active" data-mode="all">
+All
+</button>
+
+<button class="listing-mode" data-mode="buy">
+For sale
+</button>
+
+<button class="listing-mode" data-mode="rent">
+For rent
+</button>
+
+</div>
+
+
+<div class="filters">
+
+<div class="filter-item">
+
+<label>Location</label>
+
+<input id="filterLocation" placeholder="Any location">
+
+</div>
+
+
+<div class="filter-item">
+
+<label>Type</label>
+
+<select id="filterType">
+
+<option value="All">All types</option>
+<option>Apartment</option>
+<option>House</option>
+<option>Villa</option>
+<option>Penthouse</option>
+
+</select>
+
+</div>
+
+
+<div class="filter-item">
+
+<label>Bedrooms</label>
+
+<select id="filterBedrooms">
+
+<option value="0">Any</option>
+<option value="1">1+</option>
+<option value="2">2+</option>
+<option value="3">3+</option>
+<option value="4">4+</option>
+
+</select>
+
+</div>
+
+
+<div class="filter-item">
+
+<label>Max price</label>
+
+<select id="filterPrice">
+
+<option value="0">Any price</option>
+<option value="100000">€100k</option>
+<option value="250000">€250k</option>
+<option value="500000">€500k</option>
+<option value="750000">€750k</option>
+<option value="1000000">€1m</option>
+
+</select>
+
+</div>
+
+
+<button id="applyFilters" class="filter-button">
+Apply filters
+</button>
+
+</div>
+
+</div>
+
+
+<div class="results-top">
+
+<span id="propertyResultsCount">
+12 properties
+</span>
+
+<select id="sortProperties">
+
+<option value="featured">
+Featured
+</option>
+
+<option value="low">
+Price: low to high
+</option>
+
+<option value="high">
+Price: high to low
+</option>
+
+<option value="newest">
+Newest
+</option>
+
+</select>
+
+</div>
+
+
+<div class="properties-layout">
+
+<div>
+
+<div class="property-grid property-results" id="propertyResults"></div>
+
+</div>
+
+
+<aside class="map-panel">
+
+<div class="map-header">
+<span>PROPERTY MAP</span>
+<span>12 RESULTS</span>
+</div>
+
+<div class="fake-map">
+
+<div class="map-grid"></div>
+
+<div class="map-road road-one"></div>
+<div class="map-road road-two"></div>
+<div class="map-road road-three"></div>
+
+<div class="map-marker marker-one">€420k</div>
+<div class="map-marker marker-two">€680k</div>
+<div class="map-marker marker-three">€295k</div>
+<div class="map-marker marker-four">€890k</div>
+<div class="map-marker marker-five">€510k</div>
+
+</div>
+
+<p class="map-note">
+Approximate locations shown for demonstration.
+</p>
+
+</aside>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div class="footer-brand">
+
+<a href="index.html" class="brand">
+LUMEN<span>.</span>
+</a>
+
+<p>
+Independent real estate for considered living.
+</p>
+
+</div>
+
+<div>
+
+<h4>Explore</h4>
+<a href="properties.html">Properties</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div>
+
+<h4>Information</h4>
+<a href="policies.html">Privacy Policy</a>
+<a href="policies.html">Terms</a>
+<a href="policies.html">Cookies</a>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+<p>Maputo · Lisbon · Cape Town</p>
+<p>hello@lumen-estates.com</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom container">
+<span>© 2026 LUMEN Estates.</span>
+<span>All rights reserved.</span>
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
